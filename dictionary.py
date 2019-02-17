@@ -25,4 +25,13 @@ def translate(w):
 
 word = input("Enter word: ")
 
+output = translate(word)
+
+if type(output) == list:
+  for item in output:
+    print(item)
+#if it's a string
+else:
+  print(output)
+
 print(translate(word))
